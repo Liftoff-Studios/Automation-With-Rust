@@ -8,15 +8,7 @@ fn main() {
 
 fn time_in_range()->bool{
 
-    // This is the code for school start time
-    let utc: String = Utc::now().to_string();
-
-    let date1: Vec<&str> = utc.split(" ").collect();
-    let date2: Vec<&str> = date1[1].split(":").collect();
-
-    let time: i32 = date2[0].parse().expect("Error parsing");
-
-    let time = time + 5;
+    let time = 7;
 
     // This is the code for local time
     let local: String = Local::now().to_string();
